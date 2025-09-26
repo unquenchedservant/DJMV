@@ -20,5 +20,6 @@ async def on_message(message):
         await message.channel.send(phrases[random.randint(0,2)])
 
 token = os.getenv("DJMV_TOKEN")
+bot.run(token)
 
 
