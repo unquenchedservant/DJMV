@@ -19,6 +19,6 @@ async def on_message(message):
     if random.randint(1,116) == 16:
         await message.channel.send(phrases[random.randint(0,2)])
 
-token = os.get_env("DJMV_TOKEN")
+token = os.getenv("DJMV_TOKEN")
 
 
