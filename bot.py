@@ -18,7 +18,7 @@ async def on_ready():
 phrases = ["GOD ALWAYS!", "INDIE TRIBE SAVES LIVES", "TALK TO ME NICE"]
 @bot.event
 async def on_message(message):
-    if random.randint(1,116) == 16:
+    if random.randint(1,116) == 16 or if bot.user.mentioned_in(message) and not message.author == bot.user::
         await message.channel.send(phrases[random.randint(0,2)])
 
 token = os.getenv("DJMV_TOKEN")
