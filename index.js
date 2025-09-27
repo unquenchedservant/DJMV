@@ -9,7 +9,7 @@ const token = process.env.DJMV_TOKEN;
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 client.once(Events.ClientReady, readyClient => {
-    console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+    console.log(`GOD ALWAYS! Logged in as ${readyClient.user.tag}`);
 });
 
 const phrases = ['GOD ALWAYS!', 'INDIE TRIBE SAVES LIVES','TALK TO ME NICE']
