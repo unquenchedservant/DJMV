@@ -15,7 +15,7 @@ client.once(Events.ClientReady, readyClient => {
 const phrases = ['GOD ALWAYS!', 'INDIE TRIBE SAVES LIVES','TALK TO ME NICE']
 client.on('messageCreate', message => {
     if (message.author.bot) return;
-    if (Math.floor(Math.random() * 116) + 1 == 16 || message.mentions.has(client.user.id)){
+    if (Math.floor(Math.random() * 1160) + 1 == 16 || message.mentions.has(client.user.id)){
         message.reply(phrases[Math.floor(Math.random() * 3)]);
     }
 });
